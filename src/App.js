@@ -3,27 +3,6 @@ import React, { useState, useEffect } from 'react';
 import { request } from 'graphql-request';
 import Paginate from './Components/Pagination';
 
-const posts = [
-	{
-		id: 1,
-		title:
-			'How to Internationalize a React Application Using i18next and Hygraph',
-		excert:
-			'In this post, we will take a deep dive into how to internationalize a React Application using i18next and Hygraph',
-		postUrl: 'https://hygraph.com/blog/react-internationalization',
-		cover: {
-			url: 'https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
-		},
-		datePublished: '2020-01-01',
-		author: {
-			name: 'Chris Sonne',
-			profilePicture: {
-				url: 'https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
-			},
-		},
-	},
-];
-
 const App = () => {
 
 	const [blogPosts, setBlogPosts] = useState(posts);
